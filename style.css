@@ -1,0 +1,76 @@
+html{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: url(https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80) no-repeat;
+  background-size: 100vw 100vh;
+}
+.title{
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(200, 48, 48);
+  background-color:white;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 4px rgba(57, 56, 56, 0.4);
+}
+p{
+  font-size: 40px;
+}
+.new-task{
+  text-align: center;
+}
+.new-task input{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background: none;
+  font-size: 20px;
+  color: white;
+}
+.new-task input::placeholder{
+  color: white;
+  opacity: 0.6;
+}
+button{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.list-container{
+  margin-top: 30px;
+  text-align:center;
+}
+ul{
+  padding: 0;
+}
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  max-width: 270px;
+  margin: 3px auto;
+  list-style: none;
+  font-size: 30px;
+  background-color:#876445;
+  color: white;
+  padding: 4px;
+}
+@media screen and (max-width:500px) {
+  .list-container{
+    text-align: center;
+  }
+  .list-item{
+    max-width: 90%;
+    margin: auto;
+  }
+  .new-task input{
+    max-width: 95%;
+    margin: auto;
+  }
+}
